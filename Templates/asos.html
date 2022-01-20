@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bosh sahifa</title>
+</head>
+<body>
+{% extends 'bosh.html'%}
+
+{% block content%}
+<h1>Kun yangiliklari</h1>
+
+<ul>
+    {% for post in object_list%}
+         <li>{{ post.title }}</li>
+    {% endfor %}
+
+</ul>
+
+{% endblock content %}
+</body>
+</html>
